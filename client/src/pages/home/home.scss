@@ -1,0 +1,10 @@
+@import "../../style.scss";
+
+.home {
+    @include themify($themes) {
+        background-color: themed("bgSoft");
+        /* Set a minimum height of the container to fill the viewport */
+        /* Add scrollbars when content overflows */
+        min-height: calc(100vh - 40px);
+    }
+}
