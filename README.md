@@ -11,6 +11,8 @@ This is my final project for my MSc Dissertation submission - 'Development of a 
     Node.js
     MySQL
 
+* [![React][React.js]][React-url]
+* [![Node][Node.js]][Node-url]
     
 # Installation
 
