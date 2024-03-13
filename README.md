@@ -22,10 +22,6 @@ This is my final project for my MSc Dissertation submission - 'Development of a 
 
 This is an example of how you set up your project locally. To get a local copy up and running follow these simple example steps.
 
-Prerequisites
-    1. Yarn
-    2. NPM
-
 This is an example of how to list things you need to use the software and how to install them.
 
     1. Install frontend (client) dependencies (navigate to client folder)
