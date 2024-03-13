@@ -22,13 +22,13 @@ This is an example of how you set up your project locally. To get a local copy u
 
 This is an example of how to list things you need to use the software and how to install them.
 
-    1. Install frontend (client) dependencies (navigate to client folder)
+    1. Install frontend dependencies (navigate to client folder)
     yarn
 
     2. Run client
     yarn start
 
-    3. Install backend (api) dependencies
+    3. Install backend dependencies (navigate to api folder)
     npm i
 
     3. Run backend server
