@@ -1,6 +1,6 @@
 # About The Project
 
-This is my final project for my MSc Dissertation submission - 'Development of a Social media application using novel features to enhance trust between users.' A video demonstration of this project can be found here - https://youtu.be/kNfRg5PSTj8.
+This is my final project for my MSc Dissertation submission - 'Development of a Social media application using novel features to enhance trust between users'. A video demonstration of this project can be found here - https://youtu.be/kNfRg5PSTj8.
 
 # Built With
 
