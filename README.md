@@ -15,7 +15,8 @@ This is my final project for my MSc Dissertation submission - 'Development of a 
 
     -git clone https://github.com/tharanpatel/trusted-social-media.git
 
-    
+    Clone MySQL database by importing 'trusted-social-media.sql' into your MySQL environment.
+
 # Getting Started
 
 This is an example of how you set up your project locally. To get a local copy up and running follow these simple example steps.
