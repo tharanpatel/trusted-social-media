@@ -15,7 +15,7 @@ This is my final project for my MSc Dissertation submission - 'Development of a 
 
     -git clone https://github.com/tharanpatel/trusted-social-media.git
 
-    Clone MySQL database by importing 'trusted-social-media.sql' into your MySQL environment.
+    Clone MySQL database by importing 'trusted-social-media.sql' into your MySQL environment, ensuring the values in 'connect.js' align with that of your own environment.
 
 # Getting Started
 
