@@ -13,24 +13,22 @@ This is my final project for my MSc Dissertation submission - 'Development of a 
 
     Clone the repo
 
-    git clone https://github.com/tharanpatel/trusted-social-media.git
+    -git clone https://github.com/tharanpatel/trusted-social-media.git
 
     
 # Getting Started
 
 This is an example of how you set up your project locally. To get a local copy up and running follow these simple example steps.
 
-This is an example of how to list things you need to use the software and how to install them.
-
     1. Install frontend dependencies (navigate to client folder)
-    yarn
+    -yarn
 
     2. Run client
-    yarn start
+    -yarn start
 
     3. Install backend dependencies (navigate to api folder)
-    npm i
+    -npm i
 
     3. Run backend server
-    npm start
+    -npm start
 
