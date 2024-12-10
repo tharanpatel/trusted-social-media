@@ -1,18 +1,6 @@
 # About The Project
 
-This is my final project for my MSc Dissertation submission - 'Development of a Social media application using novel features to enhance trust between users'.
-
-A video demonstration of this project can be found here - https://youtu.be/kNfRg5PSTj8.
-
-# Built With
-
-<table>
-    <tr>
-    <td valign="top"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_170805.png" alt="reactjs logo" width="150"/></td>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" alt="nodejs logo" width="150"/></td>
-    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0eZ_KuTrQh7N0SuuvFF9YVovg7thqav5xkA&s" alt="my sql logo" width="150"/></td>
-    </tr>
-</table>
+This project is a social media application using novel features to enhance trust between users, which I have used to learn various technologies and methodologies in fullstack development.
 
 # Installation
 
@@ -22,7 +10,7 @@ Clone MySQL database by importing `trusted-social-media.sql` into your MySQL env
 
 # Getting Started
 
-This is an example of how you set up your project locally. To get a local copy up and running follow these simple example steps.
+To get the project up and running follow these steps.
 
 1. Install frontend dependencies (navigate to client directory)
 `yarn`
@@ -36,3 +24,12 @@ This is an example of how you set up your project locally. To get a local copy u
 3. Run backend server
 `npm start`
 
+# Built With
+
+<table>
+    <tr>
+    <td valign="top"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_170805.png" alt="reactjs logo" width="150"/></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" alt="nodejs logo" width="150"/></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0eZ_KuTrQh7N0SuuvFF9YVovg7thqav5xkA&s" alt="my sql logo" width="150"/></td>
+    </tr>
+</table>
