@@ -1,35 +1,38 @@
 # About The Project
 
-This is my final project for my MSc Dissertation submission - 'Development of a Social media application using novel features to enhance trust between users'.</br></br> A video demonstration of this project can be found here - https://youtu.be/kNfRg5PSTj8.</br>The dissertation for this project can be found in the repository under 'Dissertation.pdf'.
+This is my final project for my MSc Dissertation submission - 'Development of a Social media application using novel features to enhance trust between users'.
+
+A video demonstration of this project can be found here - https://youtu.be/kNfRg5PSTj8.
 
 # Built With
 
-    React.js
-    SCSS
-    Node.js
-    MySQL
+<table>
+    <tr>
+    <td valign="top"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/reactjs_logo_icon_170805.png" alt="reactjs logo" width="150"/></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" alt="nodejs logo" width="150"/></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0eZ_KuTrQh7N0SuuvFF9YVovg7thqav5xkA&s" alt="my sql logo" width="150"/></td>
+    </tr>
+</table>
 
 # Installation
 
-    Clone the repo
+Clone the repository - `git clone https://github.com/tharanpatel/trusted-social-media.git`
 
-    -git clone https://github.com/tharanpatel/trusted-social-media.git
-
-    Clone MySQL database by importing 'trusted-social-media.sql' into your MySQL environment, ensuring the values in 'connect.js' align with that of your own environment.
+Clone MySQL database by importing `trusted-social-media.sql` into your MySQL environment, ensuring the values in `connect.js` are correct.
 
 # Getting Started
 
 This is an example of how you set up your project locally. To get a local copy up and running follow these simple example steps.
 
-    1. Install frontend dependencies (navigate to client folder)
-    -yarn
+1. Install frontend dependencies (navigate to client directory)
+`yarn`
 
-    2. Run client
-    -yarn start
+2. Run client
+`yarn start`
 
-    3. Install backend dependencies (navigate to api folder)
-    -npm i
+3. Install backend dependencies (navigate to api directory)
+`npm i`
 
-    3. Run backend server
-    -npm start
+3. Run backend server
+`npm start`
 
