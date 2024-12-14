@@ -11,6 +11,7 @@ import negativeTrustRoutes from "./routes/negativeTrusts.js";
 import totalTrustRoutes from "./routes/totalTrusts.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import multer from "multer";
 
 //middleware, middleware is adding using app.use
 app.use((req, res, next) => {
@@ -24,9 +25,6 @@ app.use(
   })
 );
 app.use(cookieParser()) // Parses cookies in incoming requests
-
-/*
-THIS IS FOR FILE UPLOADING
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -43,7 +41,6 @@ app.post("/api/upload", upload.single("file"), (req,res)=>{
     const file = req.file;
     res.status(200).json(file.filename)
 })
-*/
 
 // Mounting router handlers using app.use()
 app.use("/api/auth", authRoutes)

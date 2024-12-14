@@ -35,13 +35,14 @@ export const updateUser = (req, res) => {
         if (err) return res.status(403).json("Token is not valid!");
 
         const q =
-            "UPDATE users SET `name`=?,`city`=? WHERE id=? ";
+            "UPDATE users SET `name`=?,`city`=?, `profilePic`=? WHERE id=? ";
 
         db.query(
             q,
             [
                 req.body.name,
                 req.body.city,
+                req.body.profilePic,
                 userInfo.id,
             ],
             (err, data) => {
