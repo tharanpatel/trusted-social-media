@@ -4,9 +4,7 @@ This project is a social media application using novel features to enhance trust
 
 # Features
 
-
-
-https://github.com/user-attachments/assets/32432191-e55a-4596-9fce-726a8851a415
+![firefox_7oAEQQd78D](https://github.com/user-attachments/assets/87474869-dd54-42ab-aeba-a01e2a98c214)
 
 ![image post](https://github.com/user-attachments/assets/2ac685f7-0938-4aae-99ea-33faa80c19c9)
 
