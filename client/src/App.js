@@ -2,6 +2,7 @@
 
 import Login from "./pages/login/Login.jsx";
 import Register from "./pages/register/Register.jsx";
+import Messaging from "./pages/messaging/Messaging.jsx";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,6 +14,7 @@ import { useContext } from "react";
 import { AuthContext } from "./contexts/authContext.js";
 import Navbar from "./components/navbar/Navbar.jsx";
 import RightBar from "./components/rightBar/RightBar.jsx";
+import RightBarBlank from "./components/rightBar/RightBarBlank.jsx";
 import Home from "./pages/home/Home.jsx";
 import Profile from "./pages/profile/Profile.jsx";
 import LeftBar from "./components/leftBar/LeftBar.jsx";
@@ -53,6 +55,25 @@ function App() {
     )
   }
 
+  const LayoutMessages = () => {
+    return (
+      <div className={`theme-${darkMode ? "dark" : "light"}`} >
+        <QueryClientProvider client={queryClient}>
+          <div>
+            <Navbar />
+            <div style={{ display: "flex" }}>
+              <LeftBar />
+              <div style={{ flex: 8, maxWidth: "900px" }}>
+                <Outlet /> {/* this will either be the homepage feed or the profile page depending where the user is */}
+              </div>
+              <RightBarBlank />
+            </div>
+          </div>
+        </QueryClientProvider>
+      </div>
+    )
+  }
+
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {  // if user is not logged in
       return <Navigate to="/login" />;
@@ -80,6 +101,19 @@ function App() {
         {
           path: "/profile/:id",
           element: <Profile />
+        }
+      ]
+    },
+    {
+      path: "/",
+      element:
+        <ProtectedRoute>
+          <LayoutMessages />
+        </ProtectedRoute>,
+      children: [
+        {
+          path: "/messaging",
+          element: <Messaging />
         }
       ]
     },

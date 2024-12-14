@@ -1,0 +1,23 @@
+@import "../../style.scss";
+
+.rightBar {
+  @include themify($themes) {
+
+    // using the function below and wrapping all css within this so it can apply dark mode to the entire file
+    flex: 3;
+    top: 60px; // this places the leftbar 70px down from the top, as the navbar is 70px tall
+    background-color: themed("bgSoft");
+    color: themed("textColor");
+
+    @include mobile {
+      display: none;
+    }
+
+    .container {
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+      width: 200px;
+    }
+  }
+}

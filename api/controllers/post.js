@@ -76,7 +76,6 @@ export const updatePost = (req, res) => {
   const q = "UPDATE posts SET `postTrust`=? WHERE `id`=?" // SQL query
 
   db.query(q, [req.body.postTrust, req.body.id], (err, data) => {
-    console.log("(" + req.body.id + ") post trust is: " + req.body.postTrust)
     if (err) res.status(500).json(err);
     if (data.affectedRows > 0) return res.json("Updated!") // This will only trigger if rows in sql are changed, meaning the update was successful
     return res.status(403).json("you can only update your own posts.");

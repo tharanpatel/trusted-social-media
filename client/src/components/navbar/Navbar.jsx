@@ -52,10 +52,12 @@ function Navbar() {
               fontSize="large"
             />
           </Link>
-          <ChatBubbleOutlineIcon
-            className="button"
-            fontSize="large"
-          />
+          <Link to="/messaging">
+            <ChatBubbleOutlineIcon
+              className="button"
+              fontSize="large"
+            />
+          </Link>
           <Link to={`profile/${currentUser.id}`}>
             <AccountCircleOutlinedIcon
               className="button"

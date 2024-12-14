@@ -12,6 +12,10 @@ import totalTrustRoutes from "./routes/totalTrusts.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import multer from "multer";
+import { WebSocket, WebSocketServer } from "ws";
+import http from "http"
+import { v4 as uuidv4 } from 'uuid';
+
 
 //middleware, middleware is adding using app.use
 app.use((req, res, next) => {
@@ -54,8 +58,48 @@ app.use("/api/negativeTrusts", negativeTrustRoutes)
 app.use("/api/totalTrusts", totalTrustRoutes)
 
 
-// Starts server on port 8800 using app.listen()
+// Starts server on port 3001 using app.listen()
 app.listen(3001, () => {
-  console.log("Server running")
+  console.log("Express Server is running on port 3001.")
 });
 
+
+// Create an HTTP server and a WebSocket server
+const server = http.createServer();
+const wsServer = new WebSocketServer({ server });
+const port = 8000;
+
+// Start the WebSocket server
+server.listen(port, () => {
+  console.log(`WebSocket server is running on port ${port}.`);
+});
+
+const clients = {};
+const users = {};
+let editorContent = null;
+let userActivity = [];
+
+// Handle new client connections
+wsServer.on("connection", function handleNewConnection(connection) {
+  const userId = uuidv4();
+  console.log("Received a new connection");
+
+  clients[userId] = connection;
+  console.log(`${userId} connected.`);
+
+  connection.on("message", (message) =>
+    processReceivedMessage(message, userId),
+  );
+  connection.on("close", () => handleClientDisconnection(userId));
+});
+
+function handleClientDisconnection(userId) {
+  console.log(`${userId} disconnected.`);
+  const json = { type: eventTypes.USER_EVENT };
+  const username = users[userId]?.username || userId;
+  userActivity.push(`${username} left the editor`);
+  json.data = { users, userActivity };
+  delete clients[userId];
+  delete users[userId];
+  sendMessageToAllClients(json);
+}
